@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@layer base {
+  :root {
+  --background-primary: 10 10 11;
+  --background-secondary: 17 17 19;
+  --background-tertiary: 24 24 27;
+}
+
+body {
+  @apply bg-background-primary text-text-primary antialiased;
+}
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom styles for sections */
+.section-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02];
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+}
