@@ -237,7 +237,7 @@ export default function ProfileCard() {
                   {buttonState === "idle" && (
                     <>
                       <Send size={18} />
-                      <span className="font-medium">Hire Me</span>
+                      <span className="font-medium">Contact Me</span>
                     </>
                   )}
                   {buttonState === "submitting" && (
