@@ -33,7 +33,7 @@ const education: EducationItem[] = [
     institution: "Vidyalankar Institute of Technology",
     duration: "2022 - 2026",
     location: "Mumbai, Maharashtra",
-    cgpa: "9.89 CGPA",
+    cgpa: "9.92 CGPA",
     description: [
       "Active participant in technical events and workshops",
       "Actively participated in NSS activities and led the Documentation and Technical Team",
@@ -41,7 +41,6 @@ const education: EducationItem[] = [
     achievements: [
       "Consistent academic performance",
       "Built various Projects",
-      "Part of NSS and also led the Documentation and Technical Team",
     ],
     color: "blue",
   },
