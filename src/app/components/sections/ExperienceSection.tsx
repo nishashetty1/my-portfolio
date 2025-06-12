@@ -32,6 +32,8 @@ interface Experience {
   skills: string[];
   color: AccentColor;
   icon: LucideIcon;
+  link?: string;
+  linkLabel?: string;
 }
 
 const getColorClass = (type: ColorType, color: AccentColor): string => {
@@ -109,6 +111,8 @@ const experiences: Experience[] = [
     ],
     color: "accent-blue",
     icon: Briefcase,
+    link: "https://drive.google.com/drive/folders/1yKNOO_7a1rszvXG7RpzV9Aq4UFu1Jeuj?usp=sharing",
+    linkLabel: "Certificate",
   },
   {
     title: "System Setup Intern",
@@ -132,6 +136,8 @@ const experiences: Experience[] = [
     ],
     color: "accent-purple",
     icon: Building,
+    link: "https://drive.google.com/file/d/1d9FYg3a8u7hcAAbbEnzy_p0cawvXMtZe/view?usp=sharing",
+    linkLabel: "Certificate",
   },
   {
     title: "Team Lead",
@@ -161,16 +167,16 @@ export default function ExperienceSection() {
 
   useEffect(() => {
     const currentRef = sectionRef.current;
-    
+
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
       { threshold: 0.1, rootMargin: "0px" }
     );
-  
+
     if (currentRef) {
       observer.observe(currentRef);
     }
-  
+
     return () => {
       if (currentRef) {
         observer.unobserve(currentRef);
@@ -266,6 +272,22 @@ export default function ExperienceSection() {
                       </div>
                     </div>
                   </div>
+
+                  {experience.link && experience.link.trim() !== "" && (
+                    <div className="mt-2">
+                      <a
+                        href={experience.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={cn(
+                          "inline-flex items-center text-sm font-semibold underline hover:text-blue-600 transition-colors",
+                          getColorClass("text", experience.color)
+                        )}
+                      >
+                        {experience.linkLabel ?? "See Certificate"}
+                      </a>
+                    </div>
+                  )}
 
                   {/* Description Points */}
                   <ul className="space-y-2 mb-6">
