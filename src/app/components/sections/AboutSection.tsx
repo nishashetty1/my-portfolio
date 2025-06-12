@@ -39,11 +39,14 @@ const skills: SkillCategory[] = [
     color: "purple",
     items: [
       "MERN Stack",
+      "Next.js",
       "MongoDB",
       "Express.js",
       "Node.js",
       "Firebase",
       "Appwrite",
+      "WordPress",
+      "CMS tools"
     ],
   },
   {
