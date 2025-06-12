@@ -37,7 +37,7 @@ const projects = [
       "https://res.cloudinary.com/dq4rbg2eb/image/upload/v1746296906/Portfolio/Project%20Fallback%20Images/Nss_Fallback.png",
     tech: ["React.js", "Tailwind CSS", "Node.js"],
     liveUrl: "https://nssvit.netlify.app/",
-    githubUrl: "https://github.com/nishashetty1",
+    githubUrl: "https://github.com/nishashetty1/nss-vit-website",
     color: "accent-rose",
   },
 ];
