@@ -267,7 +267,7 @@ export default function ContactSection() {
                       {buttonState === "idle" && (
                         <>
                           <Send size={16} />
-                          <span className="font-medium">Hire Me</span>
+                          <span className="font-medium">Contact Me</span>
                         </>
                       )}
                       {buttonState === "submitting" && (
