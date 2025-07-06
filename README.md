@@ -53,4 +53,4 @@ A personal portfolio website built with Next.js, showcasing my projects, skills,
 
 ## 📦 Deployment
 
-The portfolio is deployed on Vercel. You can view the live version at [nishashetty1.vercel.app](https://nishashetty1.vercel.app).
+The portfolio is deployed on Vercel. You can view the live version at [nishashetty.me](https://nishashetty.me).
